@@ -19,8 +19,10 @@ class MongoDriver
                 $instance->con = new MongoClient("mongodb://". MongoDriver::$dbHost);
             else
                 $instance->con = new MongoClient("mongodb://". MongoDriver::$dbUser .":". MongoDriver::$dbPass ."@". MongoDriver::$dbHost);
-            
-            $instance->db = $instance->con->selectDB( MongoDriver::$dbName );
+            if ($instance->con)
+                $instance->db = $instance->con->selectDB( MongoDriver::$dbName );
+            else
+                die("database error");
 
             self::$instance = $instance;
         }
