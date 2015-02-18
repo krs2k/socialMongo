@@ -1,0 +1,45 @@
+<center>
+    <form id='findForm'>
+        <h1>Options</h1>
+        <p>Users Count: <span id="usersCount">0 </span><input id="refreshUsersCount" class="blackBlock" type="button" value="Refresh"></p>
+        <p><span id="status"></span><input id="addUsers" class="blackBlock" type="button" value="add 10000 users"></p>
+    </form>
+    <p><?php $view->linkTo('login#index', "Back to login page", 'nice'); ?></p>
+</center>
+
+<script type="text/javascript">
+
+$(document).ready(function() {  
+    updateUsersCount = function(data){
+        $( "#usersCount" ).empty();
+        $( "#usersCount" ).append(data['count'] + " " );
+    }
+    updateStatus = function(data){
+        $( "#status" ).empty();
+        if(data['status'] == 1)
+            $( "#status" ).append("<b>OK</b>");
+        else
+            $( "#status" ).append("<b>Fail</b>");
+    }
+    $('#refreshUsersCount').click(function(){
+        $.ajax({
+            dataType: "json",
+            type : 'Get',
+            url: 'index.php?controller=addons&task=getCountOfUsers',
+            success: function(data) {
+                updateUsersCount(data);
+            }
+        });
+    })
+    $('#addUsers').click(function(){
+        $.ajax({
+            dataType: "json",
+            type : 'Get',
+            url: 'index.php?controller=addons&task=addUsers',
+            success: function(data) {
+                updateStatus(data);
+            }
+        });
+    })
+});
+</script>

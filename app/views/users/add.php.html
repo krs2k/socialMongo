@@ -1,0 +1,12 @@
+<center>
+    <form method="post" action="index.php?controller=users&task=create">
+        <h1>Sign Up</h1>
+        <p><input class="blackBlock" name="name" type="text" value="" placeholder="Name"></p>
+        <p><input class="blackBlock" name="lastName" type="text" value="" placeholder="Last Name"></p>
+        <p><input class="blackBlock" name="email" type="text" value="" placeholder="Email"></p>
+        <p><input class="blackBlock" name="password" type="password"  value="" placeholder="Password"></p>
+        <p><input class="blackBlock" name="rPassword" type="password"  value="" placeholder="Repeat Password"></p>
+        <p><input id="submit" class="blackBlock" type="submit" value="Register"></p>
+        <p><?php $view->linkTo('login#index', "Back to login page" ,"nice"); ?></p>
+    </form>
+</center>

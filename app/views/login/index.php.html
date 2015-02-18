@@ -1,0 +1,10 @@
+ <center>
+ 	<h1>Sign In</h1>
+    <form method="post" action="index.php?controller=login&task=attempt">
+        <p><input class="blackBlock" name="email" type="text" value="" placeholder="Email"></p>
+        <p><input class="blackBlock" name="password" type="password"  value="" placeholder="Password"></p>
+        <p><input id="submit" class="blackBlock" type="submit" value="login"></p>
+        <p><?php $view->linkTo('users#add', "Or create new account", 'nice'); ?></p>
+        <p><?php $view->linkTo('addons#index', "More options", 'nice'); ?></p>
+    </form>
+</center>

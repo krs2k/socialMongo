@@ -1,0 +1,12 @@
+<center>
+    <form method="post" action="index.php?controller=users&task=update">
+        <h1>Edit</h1>
+        <p><input class="blackBlock" name="city" type="text" value="<?= $me['city']; ?>" placeholder="City"></p>
+        <p><input class="blackBlock" name="country" type="text" value="<?= $me['country']; ?>" placeholder="Country"></p>
+        <p><input class="blackBlock" name="street" type="text" value="<?= $me['street']; ?>" placeholder="Street"></p>
+        <p><input class="blackBlock" name="job" type="text"  value="<?= $me['job']; ?>" placeholder="Job"></p>
+        <p><input class="blackBlock" name="age" type="text"  value="<?= $me['age']; ?>" placeholder="Age"></p>
+        <p><input id="submit" class="blackBlock" type="submit" value="Save"></p>
+        <p><?php $view->linkTo('users#show', "Back to profile"); ?></p>
+    </form>
+</center>

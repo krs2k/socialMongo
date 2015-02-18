@@ -1,0 +1,61 @@
+<nav class="navbar navbar-default navbar-static-top profileNavBar" role="navigation">
+    <div class="profileTopBar btn-group btn-group-justified" role="group">
+        <a class="navbar-brand nameAndLastNameOfUser" href="index.php?id=<?= $me['_id'] ?>"><?= $me['name']; ?> <?= $me['lastName']; ?></a>
+        <!-- <div class="search">  -->
+           <a style="text-align: center;"><input id="search" type="text" placeholder="Search"></a>
+       <!--  </div> -->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a><span class="icon glyphicon glyphicon-envelope"></span></a></li>
+          <li><a><span class="icon glyphicon glyphicon-user"></span></a></li>
+          <li><a id="notify"><span class="icon glyphicon glyphicon-warning-sign"><span  id='notifyCount' class="badge">0</span></span></a></li>
+          <li><?php $view->linkTo('login#logout', "Logout"); ?></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="block">
+    	<img id="profilePhoto" class="profilePhotoBox" src="public/images/nophoto.png" height="200" width="200">
+        <p><b>email: </b><?= $user['email'] ?></p>
+        <p><b>Name: </b><?= $user['name'] ?></p>
+        <p><b>Last Name: </b><?= $user['lastName'] ?></p>
+        <p><b>Age: </b><?= $user['age'] ?></p>
+        <p><b>Country: </b><?= $user['country'] ?></p>
+        <p><b>City: </b><?= $user['city'] ?></p>
+        <p><b>Street: </b><?= $user['street'] ?></p>
+        <p><b>Job: </b><?= $user['job'] ?></p>
+        <div>
+            <?
+            switch ($relation) {
+                case "me":
+                     $view->linkTo('users#edit', "Edit profile");
+                    break;
+                case "unfriend":
+                    $view->linkTo('friends#add&id='.$user['_id']."&action=invite", "Add to friends");
+                    break;
+                case "request":
+                    $view->linkTo('friends#add&id='.$user['_id']."&action=accept", "Accept request");
+                    break;
+                case "invite":
+                    echo "Waiting for accept";
+                    break;
+            }
+            ?>
+        </div>
+    </div>
+</div>
+<ul class="notify"></ul>
+
+<div id="firendsBar">
+    <div class="search">
+        <input id="friendsSearch"  type="text" placeholder="search">
+        <span class='glyphicon glyphicon-search'></span>
+    </div>
+    <ul class="friendsList"></ul>
+</div>
+<script src="public/js/friendsBar.js"></script>
+<script src="public/js/find.js"></script>
+<script src="public/js/notifyBox.js"></script>
+<script>
+var friendbar = new FriendsBar(<?= json_encode($me['friends']) ?>);
+var notifyBox = new NotifyBox(<?= json_encode($me['notifies']) ?>)
+</script>

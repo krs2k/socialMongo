@@ -1,0 +1,423 @@
+body {
+	background-color:#ffffff;
+	margin: 0;
+   padding: 0;
+}
+.icon{
+	font-size: 20px;
+	color: #000000;
+}
+.container {
+	width:30%;
+	height:100%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#000000;
+	height:	91%;
+	width: 91%;
+	float: left;
+	-webkit-border-radius: 0px 20px 20px 0px;
+	margin-right: 1%;
+	margin-top: 1%
+	padding-left: 20px;
+}
+#firendsBar{
+	clear: right;
+	float: right;
+ 	width:8%;
+ 	height: 90%;
+	background-color:#FFFFFF;
+	text-align: center;
+	overflow-y: scroll; 
+}
+#firendsBar .search{
+	margin: 15px 0px 15px 0px;;
+}
+#firendsBar .search input{
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+	width: 86px;
+}
+#firendsBar ul {
+	list-style: none; 
+	margin-top: 10px;
+    padding: 0px;
+}
+#firendsBar li {
+	border-bottom-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+#firendsBar p {
+	color: #5e5e5e;
+	font-size: 10.5px
+}
+#firendsBar img{
+	width: 50px;
+	height: 50px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+}
+#nice {
+	color: #5e5e5e;
+	font-size: 10.5px
+}
+.block{
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	width:30%;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	background-color:#FFFFFF;
+	padding: 25px;
+}
+.profileTopBar{
+	height:5%;
+	display:bock;
+	background-color:#FFFFFF;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.nameAndLastNameOfUser{
+	font-size:1.4em;
+	float:left;
+	width:30%;
+}
+#search{
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.ui-autocomplete, .ui-menu {
+	z-index: 200000;
+	 width:250px;
+	 position: absolute;
+	 float:left;
+ 	 display:bock;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+	background-color:#FFFFFF;
+	color:#000000;
+	padding: 5px;
+	text-align: left;
+	list-style-type: none;
+}
+.ui-widget{
+	border-style: solid;
+    border-width: 2px;
+	margin-bottom: 10px;
+    display:bock;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+	padding: 5px;
+}
+
+.findPhotoBox{
+	margin-left: 10px;
+	border-style: solid;
+    border-width: 2px;
+	margin-bottom: 2px;
+    display:bock;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+}
+.findNameBox{
+	margin-bottom: 5px;
+	margin-left:25px;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    display:bock;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+	background-color:#515151;
+	color:#FFFFFF;
+	padding: 2px;
+}
+.ui-helper-hidden-accessible {
+    display: none;
+}
+.profilePhotoBox{
+	margin-left: 10px;
+	border-style: solid;
+    border-width: 2px;
+	margin-bottom: 2px;
+    display:bock;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+}
+#profileButtons{
+	float:left;
+	width:40%;
+}
+
+.profileLeftBar {
+	clear: left;
+	float: left;
+ 	width:auto;
+	display:bock;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+	background-color:#FFFFFF;
+	padding: 25px;
+}
+.notify {
+	z-index: 20000;
+	 width:250px;
+	 position: fixed;
+	 clear: both;
+	right: 20;
+ 	 display:bock;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+	background-color:#FFFFFF;
+	color:#000000;
+	padding: 5px;
+}
+.blackBlock {
+ 	display:bock;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+	background-color:#000000;
+	color:#FFFFFF;
+	padding: 5px;
+}
+.friendPhotoBox{
+	margin-bottom: 2px;
+    display:bock;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+}
+.friendRequestBox {
+	opacity: 0.4;
+	padding: 5px;
+	border-style: solid;
+    border-width: 2px;
+	text-align: center;
+	margin-bottom: 10px;
+    display:bock;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+}
+
+.whiteBlock {
+ 	 display:bock;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+	background-color:#FFFFFF;
+	color:#000000;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+.spinnerBox {
+	position: absolute;
+	clear: left;
+	float: left;
+ 	 display:bock;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+	background-color:#FFFFFF;
+	color:#000000;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+.error {
+	border-style: solid;
+    border-width: 2px;
+	text-align: center;
+	width: 650px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 10px;
+    display:bock;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+	background-color:#FFFFFF;
+	color:#DB4437;
+	padding: 5px;
+}
+.msgBox {
+	width: 220px;
+	border-style: solid;
+    border-width: 2px;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 10px;
+    display:bock;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+	background-color:#FFFFFF;
+	color:#003366;
+	padding: 5px;
+}
+.photo-grid {
+	margin: 1em auto;
+	max-width: 63%;
+	text-align: center;
+	width:auto;
+	display:bock;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+	background-color:#FFFFFF;
+	padding: 5px;
+}
+ 
+.photo-grid li {
+	border: 5px solid white;
+	display: inline-block;
+	margin: 1em;
+	width:auto;
+	color:#003366;
+}
+ 
+.photo-grid img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+ 
+.photo-grid figure {
+	height: 200px;
+	width: 200px;
+	overflow: hidden;
+	position: relative;
+	
+	margin-bottom: 2px;
+    display:bock;
+}
+ 
+.photo-grid figcaption {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	display: table;
+	height: 25%;
+	width: 90%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	left: 5%;
+	top: 72%;
+	z-index: 100;
+	border-style: solid;
+    border-width: 2px;
+	margin-bottom: 2px;
+    display:bock;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+	display: block;
+}
+ 
+.photo-grid figcaption p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	top: -75%;
+	vertical-align: middle;
+	text-align: center;
+}
+.photo-grid li:hover figcaption {
+	opacity: 1;
+}
+.photo-grid img {
+	border-style: solid;
+    border-width: 2px;
+	margin-bottom: 2px;
+    display:bock;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+	display: block;
+	height: auto;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	max-width: 100%;
+} 
+::-webkit-scrollbar {  
+    width: 12px;  
+    -webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+}  
+::-webkit-scrollbar-track {  
+    background-color: #FFFFFF;  
+    border-left: 1px solid #ccc;  
+    -webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+}  
+::-webkit-scrollbar-thumb {  
+    background-color: #ccc;  
+    -webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+}  
+::-webkit-scrollbar-thumb:hover {  
+    background-color: #aaa;  
+    -webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;   
+	-moz-border-radius: 20px; 
+}  
+
+@media (min-width: 320px) and (max-width: 767px) {
+   #firendsBar{
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+	.container{
+		width: 80%;
+	}
+	#test{
+		width: 100%;
+		-webkit-border-radius: 0px 0px 0px 0px;
+	}
+	li{
+		width: 10%
+		margin: 0px;
+	}
+}
