@@ -24,6 +24,7 @@ class MongoDriver
             else
                 die("database error");
 
+            var_dump($instance->con);
             self::$instance = $instance;
         }
         return self::$instance;
