@@ -4,5 +4,4 @@ define("dbName", "social");
 define("dbUser", "");
 define("dbPass", "");
 define("devMode", true);
-?>
-	
+
